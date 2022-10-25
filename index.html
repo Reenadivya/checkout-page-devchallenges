@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/116ba3a803.js"
+      crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="checkout__header">Checkout</h1>
+    </header>
+    <form
+      class="form__container"
+      onsubmit="alert('Your purchase is sucessful')">
+      <div class="left--input__container">
+        <div class="left--input__container-contactinfo">
+          <h3 class="contact__info--header">Contact infomation</h3>
+          <div class="form__input">
+            <label for="name">E-mail</label>
+            <i class="fa-solid fa-envelope icon"></i>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your email..."
+              required />
+          </div>
+          <div class="form__input">
+            <label for="name">Phone</label>
+            <i class="fa-solid fa-phone icon"></i>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter your phone..."
+              required />
+          </div>
+        </div>
+
+        <div class="left--input__container-shippingadd">
+          <h3 class="contact__info--header">Shipping address</h3>
+          <div class="form__input">
+            <label for="name">Full name</label>
+            <i class="fa-solid fa-user icon"></i>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Rodney Cotton"
+              required />
+          </div>
+          <div class="form__input">
+            <label for="name">Address</label>
+            <i class="fa-solid fa-house icon"></i>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your address.."
+              required />
+          </div>
+          <div class="form__input">
+            <label for="name">City</label>
+            <i class="fa-solid fa-city icon"></i>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your city.."
+              required />
+          </div>
+          <div class="left--input__container-shippingadd-subcolumn">
+            <div class="form__input shippindadd__subcolumn">
+              <label for="name">Country</label>
+              <i class="fa-solid fa-earth-americas icon"></i>
+              <select id="country" name="country">
+                <option value="volvo">United States of America</option>
+                <option value="saab">Colombia</option>
+                <option value="fiat">Brazil</option>
+                <option value="audi">Australia</option>
+              </select>
+            </div>
+            <div class="form__input">
+              <label for="name">Postal code</label>
+              <i class="fa-solid fa-map-pin icon"></i>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Your postal code.."
+                required />
+            </div>
+          </div>
+        </div>
+        <div class="checkbox">
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+          <label for="vehicle1"> Save this information for next time</label
+          ><br />
+        </div>
+        <button>Continue</button>
+      </div>
+      <div class="checkout__summary">
+        <div class="item__container">
+          <div class="item item1">
+            <img class="item__image" src="./photo1.png" alt="" />
+            <div class="item__info">
+              <div class="item__infos">
+                <p class="item__name">Vintage Backpack</p>
+                <div class="item__pri">
+                  <p class="item__price">$54.99</p>
+                  <span class="item__price--discount"><s>$94.99</s></span>
+                </div>
+              </div>
+              <div class="quantity">
+                <input type="button" value="-" class="minus" />
+                <input
+                  type="number"
+                  step="1"
+                  min="1"
+                  max=""
+                  name="quantity"
+                  value="1"
+                  title="Qty"
+                  class="input-text qty text"
+                  size="4"
+                  pattern=""
+                  inputmode="" />
+                <input type="button" value="+" class="plus" />
+              </div>
+            </div>
+          </div>
+          <div class="item item2">
+            <img class="item__image" src="./photo2.png" alt="" />
+            <div class="item__info">
+              <div class="item__infos">
+                <p class="item__name">Levi Shoes</p>
+                <div class="item__pri">
+                  <p class="item__price">$74.99</p>
+                  <span class="item__price--discount"><s>$124.99</s></span>
+                </div>
+              </div>
+              <div class="quantity">
+                <input type="button" value="-" class="minus" />
+                <input
+                  type="number"
+                  step="1"
+                  min="1"
+                  max=""
+                  name="quantity"
+                  value="1"
+                  title="Qty"
+                  class="input-text qty text"
+                  size="4"
+                  pattern=""
+                  inputmode="" />
+                <input type="button" value="+" class="plus" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="checkout__info">
+          <div class="checkout__info--column checkout__info--shipping">
+            <p class="checkout__info--para">Shipping</p>
+            <p class="checkout__info--price">$19</p>
+          </div>
+          <div class="checkout__info--column checkout__info--total">
+            <p class="checkout__info--para">Total</p>
+            <p class="checkout__info--price">$148.98</p>
+          </div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
